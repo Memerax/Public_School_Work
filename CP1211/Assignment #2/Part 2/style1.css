@@ -1,0 +1,60 @@
+
+/* 4. A. Element Selector */
+a {
+    color: rgb(11, 16, 107);
+}
+/* 4. B. Class Selector */
+.info-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* 4. C. ID Selector */
+
+#lead {
+    color: brown;
+}
+
+/* 4. D. Descendant Selector 
+   7. Adjust Background Color */
+
+ul > li {
+    background-color: aliceblue;
+}
+
+/* 5. A,B,C,D  */
+
+.spinoff {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: large;
+    color: yellow;
+}
+
+/* 6. A,B,C */
+
+.table {
+    margin: 50px;
+    padding: 10px;
+    border: dashed red 3px;
+}
+
+/* 8. Background imge */
+
+#themesong {
+    background-image: url(https://i.pinimg.com/originals/d3/bb/d0/d3bbd00fc97e601c6dabca395af2e7f6.png);
+    color: aliceblue;
+}
+
+/* 9. */
+
+.info{
+    cursor: crosshair;
+    user-select: none;
+    
+}
+
+img {
+    transform: rotate(180deg);
+    filter: saturate(7);
+}
