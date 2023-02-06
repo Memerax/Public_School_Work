@@ -15,3 +15,8 @@ function calculateReturn() {
 function resetArea() {
   document.querySelector('#result1').innerHTML = `0`
 }
+
+function resetBottleTotal() {
+  document.querySelector("#result2").innerHTML = `0`
+
+}
