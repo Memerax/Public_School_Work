@@ -1,7 +1,7 @@
 .container-top {
     border: 3px blue;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .grid-container{
     display: grid;
@@ -17,7 +17,7 @@ a {
 }
 
 .header-link {
-    padding: 50px;
+    padding: 10px;
 }
 
 .info-text {
@@ -52,8 +52,7 @@ ul > li {
     user-select: none;
     
 }
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+@media only screen and (max-width: 600px) {
     .grid-container {
         display: grid;
         grid-template-columns: auto;
@@ -61,11 +60,3 @@ ul > li {
     }
 }
 
-@media only screen and (max-width: 500px) {
-    /* For mobile phones: */
-    .your-grid-container-class {
-        display: grid;
-        grid-template-columns: auto;
-        grid-auto-rows: auto;
-    }
-}

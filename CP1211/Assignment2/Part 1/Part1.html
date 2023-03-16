@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1 id="header">Enter a number:</h1>
+<label for="header"></label>
+<input type="text" id="even_odd">
+<br>
+<br>
+<button onclick = "evens()" id="button1">Display Even Numbers</button>
+<p id="output"></p>
+<script>
+  document.getElementById("button1").style.background='#1900ED';
+  document.getElementById("button1").style.color='#ffffff';
+  function evens() {
+    const num = document.getElementById("even_odd").value;
+    let evenNumbers = '';
+    for (let i = 0; i < num; i++) {
+      if (i % 2 === 0) {
+        evenNumbers += i + ", "
+      }
+
+    }
+    evenNumbers = evenNumbers.slice(0,-2)
+    document.getElementById('output').innerText = 'Even numbers between 0 and ' + num + " are " +
+            evenNumbers
+  }
+</script>
+</body>
+</html>
