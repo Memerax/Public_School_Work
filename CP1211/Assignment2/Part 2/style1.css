@@ -1,7 +1,23 @@
+.container-top {
+    border: 3px blue;
+    display: flex;
+    justify-content: space-between;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(50px , auto);
+}
 
-
+.grid-item {
+    padding: 50px;
+}
 a {
     color: rgb(11, 16, 107);
+}
+
+.header-link {
+    padding: 50px;
 }
 
 .info-text {
@@ -36,4 +52,20 @@ ul > li {
     user-select: none;
     
 }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: auto
+    }
+}
 
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    .your-grid-container-class {
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: auto;
+    }
+}
