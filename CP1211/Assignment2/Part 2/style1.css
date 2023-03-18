@@ -37,8 +37,7 @@ ul > li {
 }
 
 .table {
-    margin: 50px;
-    padding: 10px;
+    justify-content: center;
     border: dashed red 3px;
 }
 
@@ -60,3 +59,14 @@ ul > li {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .grid-item {
+        padding: 0px;
+    }
+    .table {
+        margin: 50px;
+        padding: 10px;
+        border: dashed red 3px;
+    }
+
+}
